@@ -1,0 +1,44 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: Arial, sans-serif; /* Choose a suitable font-family */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #202020;
+}
+
+tr:nth-child(even) {
+  background-color: #333333; /* Optional: alternate row color */
+}
+
+tr:nth-child(odd) {
+  background-color: #202020;
+}
+
+
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #202020;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+
+

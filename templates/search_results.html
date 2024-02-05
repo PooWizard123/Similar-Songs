@@ -1,0 +1,14 @@
+{% for result in results %}
+<tr>
+    <td>{{ result.title }}</td>
+    <td>{{ result.artist }}</td>
+    <td><a href = "https://open.spotify.com/track/{{result.song_id}}" class = "fa fa-spotify" style='font-size:48px; color: white'>
+        
+    </a></td>
+    <td><form action="/findsim" method="POST">
+        
+        <input type ='submit' name='{{ result.song_id }}' value='Find!'>
+        </form></td>
+</tr>
+
+{% endfor %}

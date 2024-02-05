@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similar Songs</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Most Similar Songs</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Similar Songs To: {{ s_name }}</th>
+                <th>Open Track</th>
+            </tr>
+        </thead>
+    <tbody>
+
+    {% for song,id in most_similar.items() %}
+    <tr>
+        <td>{{ song}}</td>
+        <td><a href = "https://open.spotify.com/track/{{id}}" class = "fa fa-spotify" style='font-size:48px; color: white'>
+        
+        </a></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+
+</body>
+</html>

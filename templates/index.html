@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similar Song Finder</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <input type = "text" class = 'input' placeholder="Search" name = "q" hx-get = "/search" hx-trigger= "keyup changed delay:500ms" hx-target = "#results">
+    <table>
+        <thead>
+            <tr>
+                <th>Song Title</th>
+                <th>Artist</th>
+                <th>Open Song</th>
+                <th>Similar Songs</th>
+            </tr>
+        </thead>
+        <tbody id = "results">
+        </tbody>
+        
+    </table>
+
+</body>
+</html>
